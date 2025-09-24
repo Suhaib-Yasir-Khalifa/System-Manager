@@ -3,8 +3,7 @@ import { JSX } from 'react'
 import SkeletonApp from './SkeletonApp'
 import ErrNotFound from './ErrNotFound'
 import useSystemQuery from '@/hooks/useSystemQuery'
-import { PieChart, Pie, Tooltip, Legend, Cell, LineChart } from 'recharts'
-import { ChartContainer } from './ui/chart'
+import { PieChart, Pie, Tooltip, Legend, Cell } from 'recharts'
 
 {
   /**___________________________________________ */
@@ -81,8 +80,10 @@ function Home(): JSX.Element {
   return (
     <div className={cn('bg-accent flex flex-col gap-y-3 p-2 h-full w-full rounded-2xl ')}>
       <div className={cn('h-1/8 flex flex-row justify-between')}>
-        <div className="bg-red-600 w-1/2 h-full p-1"></div>
-        <div className="bg-yellow-600 w-1/2 h-full p-1"></div>
+        <div className=" w-1/2 h-full p-1">{/**In Case of adding something */}</div>
+        <div className="bg-yellow-600 w-1/2 h-full p-1">
+          {/**Adding Logined Email or direction to Login page */}
+        </div>
       </div>
       <div className={cn('bg-background p-1 gap-x-2 h-1/2 flex flex-row w-full rounded-2xl')}>
         <div
