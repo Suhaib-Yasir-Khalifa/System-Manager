@@ -233,7 +233,11 @@ function Home(): JSX.Element {
             <div className="font-bold  text-3xl">
               <div className="text-center">Graphics</div>
               <div className="font-bold text-left text-muted-foreground flex flex-col gap-y-2 text-sm">
-                <div> Controllers: {informationSet?.graphic.controllers[0].model}</div>
+                {informationSet?.graphic.controllers.length > 0 ? (
+                  <div>Controllers: {informationSet?.graphic.controllers[0].model}</div>
+                ) : (
+                  <div>No controllers found</div>
+                )}
                 <div> Display Cards: {informationSet?.graphic.displays.length}</div>
                 {informationSet?.graphic.displays.map((displayCard, idx) => {
                   return (
