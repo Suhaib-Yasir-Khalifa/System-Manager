@@ -350,8 +350,8 @@ function Home(): JSX.Element {
               </div>
 
               <CircleChartData
-                data={`${informationSet?.cpuTemp.main.toFixed(0)}°`}
-                angleCoinfig={informationSet?.cpuTemp.main}
+                data={`${informationSet?.cpuTemp?.main?.toFixed(0)}°`}
+                angleCoinfig={informationSet?.cpuTemp?.main}
                 nameLable="Celcuis"
               />
             </div>
