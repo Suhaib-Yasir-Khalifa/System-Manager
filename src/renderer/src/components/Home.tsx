@@ -270,7 +270,7 @@ function Home(): JSX.Element {
                     </div>
                   )}
                 </div>
-                <div className="w-full h-full ">
+                <div className="w-full h-max">
                   <div className="w-full h-max flex flex-row gap-x-2 items-center">
                     {informationSet?.batteryUsage.isCharging ? (
                       <BatteryCharging className={cn('w-[8rem] h-max  text-green-400')} />
